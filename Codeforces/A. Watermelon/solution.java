@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int T = 3 - 2; // Testing 2
+        int T = 3 - 2; // Testing 3
 
         while (T-- > 0) {
             int n = sc.nextInt();
