@@ -22,13 +22,25 @@ public class Main {
                 }
             }
 
-            int ans = 2 * countF - countF % 2;
-
-            if (countR == 0) {
-                ans = Math.min(ans, 2);
-            } else {
-                ans = Math.min(ans, 2 * countR - (1 - countR % 2));
+            int ans = 0;
+            if(countF % 2 == 0){
+                ans = 2 * countF;
             }
+            else{
+                ans = 2 * countF - 1;
+            }
+
+
+            if(countR == 0){
+                ans = Math.min(2, ans);
+            }
+            else if(countR % 2 == 0){
+                ans = Math.min(2 * countR - 1, ans);
+            }
+            else{
+                ans = Math.min( 2 * countR, ans);
+            }
+
             System.out.println(ans);
         }
     }
