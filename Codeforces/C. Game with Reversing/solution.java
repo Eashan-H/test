@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // Test12 hopefully last
+        Scanner sc = new Scanner(System.in); // Test1 remove notification
         int t = sc.nextInt();
 
         while (t-- > 0) {
